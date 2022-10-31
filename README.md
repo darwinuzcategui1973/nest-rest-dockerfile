@@ -58,16 +58,39 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+# docker
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+# Importante
+Tener instalado [Docker Desktop](https://www.docker.com/)!!!
+o la extension de vscode docker
 
-## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+# Comandos usados
 
-## License
+Login de Docker Hub
+```
+docker login
+```
 
-Nest is [MIT licensed](LICENSE).
+Generar la imagen, especificar el TAG (-t) y el punto significa dónde encontrará el Dockerfile (relativo a el directorio donde corres el comando)
+```
+docker build -t nest-rest .
+```
+
+Renombrar imagen local
+```
+docker image tag nest-rest 11642590/nest-resp-api-darwin:1.0.0
+```
+
+Correr la imagen en el puerto 80 de mi equipo con el 3000 del contenedor
+```
+docker run -p 80:3000 11642590/nest-resp-api-darwin:1.0.0
+```
+
+Subir la imagen al repositorio
+```
+docker push 11642590/nest-resp-api-darwin:1.0.0 
+```
