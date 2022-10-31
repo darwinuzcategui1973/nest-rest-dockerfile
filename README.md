@@ -60,7 +60,7 @@ $ npm run test:cov
 
 # docker
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="https://www.docker.com/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
 # Importante
